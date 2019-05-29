@@ -7,7 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-
+ul, ol {
+  list-style: none;
+}
 /*
 fonts: 
 
@@ -27,3 +29,72 @@ fonts:
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+body {
+  width: 1200px; 
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f3f7f8;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.site-header-top-navigation {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 1200px;
+  height: 42px;
+  background-color: #293449;
+}
+
+.site-header-top-navigation > a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.top-navigation-search {
+  display: inline-block;
+  margin-left: 350px;
+  width: 270px;
+}
+
+.top-navigation-bookmarks {
+  display: inline-block;
+  width: 150px;
+}
+
+.top-navigation-cart {
+  display: inline-block;
+  width: 150px;
+}
+
+.top-navigation-order {
+  display: inline-block;
+  width: 150px;
+}
+
+.top-navigation-logo {
+  display: block;
+  position: absolute;
+  left: 130px;
+  top: 0px;
+  z-index: 1;
+ }
+
+ h1 {
+   display: inline-block;
+   margin-top: 42px;
+   min-height: 158px;
+   width: 450px;
+   padding-left: 185px;
+   padding-top: 85px;
+   font-size: 16px;
+   line-height: 23px;
+   font-style: italic;
+   color: #ee3643;
+ }
