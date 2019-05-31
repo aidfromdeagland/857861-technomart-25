@@ -5,6 +5,8 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 ul, ol {
@@ -31,20 +33,43 @@ fonts:
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   width: 1200px; 
-  margin: 0;
-  padding: 0;
+}
+
+body > * {
+  outline: 4px dashed red;
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   background-color: #f3f7f8;
   font-family: "Cuprum", "Arial", sans-serif;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+header > * {
+  outline: 4px dashed purple;
+}
+
+.header-middle-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  margin-top: 47px;
+}
+
+.header-middle-row > * {
+outline: 4px dashed greenyellow;
 }
 
 .site-header-top-navigation {
-  display: block;
   position: absolute;
   top: 0;
+  left: 0;
   width: 1200px;
   height: 42px;
   background-color: #293449;
@@ -58,23 +83,19 @@ header {
 }
 
 .top-navigation-search {
-  display: inline-block;
   margin-left: 350px;
   width: 270px;
 }
 
 .top-navigation-bookmarks {
-  display: inline-block;
   width: 150px;
 }
 
 .top-navigation-cart {
-  display: inline-block;
   width: 150px;
 }
 
 .top-navigation-order {
-  display: inline-block;
   width: 150px;
 }
 
@@ -87,12 +108,6 @@ header {
  }
 
  h1 {
-   display: inline-block;
-   margin-top: 42px;
-   min-height: 158px;
-   width: 450px;
-   padding-left: 185px;
-   padding-top: 85px;
    font-size: 16px;
    line-height: 23px;
    font-style: italic;
