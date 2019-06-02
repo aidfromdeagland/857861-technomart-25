@@ -12,6 +12,10 @@ html {
 ul, ol {
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
 /*
 fonts: 
 
@@ -36,10 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 1200px; 
-}
-
-body > * {
-  outline: 4px dashed red;
+  font-size: 17px;
 }
 
 header {
@@ -49,24 +50,21 @@ header {
   font-family: "Cuprum", "Arial", sans-serif;
   padding-left: 130px;
   padding-right: 130px;
-}
-
-header > * {
-  outline: 4px dashed purple;
+  height: 320px;
 }
 
 .header-middle-row {
   display: flex;
   flex-direction: row;
-  justify-content: baseline;
+  justify-content: space-between;
   margin-top: 47px;
-}
-
-.header-middle-row > * {
-outline: 4px dashed greenyellow;
+  height: 158px;
+  align-items: center;
 }
 
 .site-header-top-navigation {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -76,27 +74,47 @@ outline: 4px dashed greenyellow;
 }
 
 .site-header-top-navigation > a {
+  display: block;
   color: white;
-  text-decoration: none;
   font-size: 17px;
   line-height: 18px;
+  width: 150px;
+  height: 100%;
+  text-align: center;
+  padding: 11px 0;
 }
 
-.top-navigation-search {
+.site-header-search {
   margin-left: 350px;
   width: 270px;
 }
 
+.site-header-search-input::placeholder {
+ opacity: 1; /* for firefox */
+ vertical-align: top;
+}
+
+.site-header-search-input {
+  height: 100%;
+  margin-left: 50px;
+  background-color: #293449;
+  border: none;
+  color: white;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
 .top-navigation-bookmarks {
-  width: 150px;
+
 }
 
 .top-navigation-cart {
-  width: 150px;
+
 }
 
 .top-navigation-order {
-  width: 150px;
+  background-color: #63a63e;
 }
 
 .top-navigation-logo {
@@ -108,8 +126,155 @@ outline: 4px dashed greenyellow;
  }
 
  h1 {
-   font-size: 16px;
-   line-height: 23px;
-   font-style: italic;
-   color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+  margin-left: 50px;
  }
+ 
+ .site-header-info {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+ }
+
+ .site-header-phone {
+  display: block;
+  width: 100%;
+  min-height: 45px;
+  padding-top: 10px;
+  border: 3px solid white;
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+ }
+
+ .site-header-info address {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  text-align: center;
+ }
+
+ .user-navigation {
+   display: flex;
+   flex-direction: row;
+   height: 45px;
+   margin-top: -21px;
+ }
+
+ .user-navigation a {
+   color: black;
+   font-size: 21px;
+   line-height: 21px; 
+   background-color: white;
+   text-align: center;
+   padding-top: 12px;
+ }
+
+ .user-navigation-login {
+   display: block;
+   width: 120px;
+   height: 45px;
+   padding-left: 15px;
+ }
+
+ .user-navigation-registration {
+  display: block;
+  width: 150px;
+  height: 45px;
+  margin-left: 10px;
+ }
+
+ .site-navigation {
+   display: flex;
+   flex-direction: row;
+   width: 940px;
+   min-height: 60px;
+   justify-content: space-around;
+   align-items: center;
+ }
+
+ .site-navigation li {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .site-navigation a {
+   display: block;
+   background-color: #32425c;
+   font-size: 17px;
+   line-height: 17px;
+   color: white;
+   padding: 21px 34px;
+ }
+
+ /*---------------MAIN PART--------------------*/
+
+ main {
+   display: flex;
+   flex-direction: column;
+   width: 940px;
+   margin: 60px 130px 53px 130px;
+ }
+
+ .menu {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .menu-slider {
+   outline: 3px dashed gray;
+   display: block;
+   width: 620px;
+   height: 266px;
+   margin-top: 143px;
+ }
+
+.menu ul {
+  position: absolute;
+  display: flex;
+  width: 940px;
+}
+
+ .menu li {
+   outline: 3px dashed gray;
+   display: block;
+   position: relative;
+   height: 123px;
+   width: 300px; 
+ }
+
+ .menu li:nth-of-type(4) {
+   position: absolute;
+   left: 640px;
+   top: 143px;
+ }
+
+ .menu li:nth-of-type(2) {
+   margin-left: 20px;
+   margin-right: 20px;
+
+}
+
+ .menu li:nth-of-type(4) {
+  position: absolute;
+  left: 640px;
+  top: 143px;
+}
+
+.menu li:nth-of-type(5) {
+  position: absolute;
+  left: 640px;
+  top: 286px;
+}
+
+
+
+
+ 
