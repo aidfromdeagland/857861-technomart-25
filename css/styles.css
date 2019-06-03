@@ -161,26 +161,26 @@ header {
  }
 
  .user-navigation {
-   display: flex;
-   flex-direction: row;
-   height: 45px;
-   margin-top: -21px;
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  margin-top: -21px;
  }
 
  .user-navigation a {
-   color: black;
-   font-size: 21px;
-   line-height: 21px; 
-   background-color: white;
-   text-align: center;
-   padding-top: 12px;
+  color: black;
+  font-size: 21px;
+  line-height: 21px; 
+  background-color: white;
+  text-align: center;
+  padding-top: 12px;
  }
 
  .user-navigation-login {
-   display: block;
-   width: 120px;
-   height: 45px;
-   padding-left: 15px;
+  display: block;
+  width: 120px;
+  height: 45px;
+  padding-left: 15px;
  }
 
  .user-navigation-registration {
@@ -191,49 +191,50 @@ header {
  }
 
  .site-navigation {
-   display: flex;
-   flex-direction: row;
-   width: 940px;
-   min-height: 60px;
-   justify-content: space-around;
-   align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 940px;
+  min-height: 60px;
+  justify-content: space-around;
+  align-items: center;
  }
 
  .site-navigation li {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
  }
 
  .site-navigation a {
-   display: block;
-   background-color: #32425c;
-   font-size: 17px;
-   line-height: 17px;
-   color: white;
-   padding: 21px 34px;
+  display: block;
+  background-color: #32425c;
+  font-size: 17px;
+  line-height: 17px;
+  color: white;
+  padding: 21px 34px;
  }
 
  /*---------------MAIN PART--------------------*/
 
  main {
-   display: flex;
-   flex-direction: column;
-   width: 940px;
-   margin: 60px 130px 53px 130px;
+  display: flex;
+  flex-direction: column;
+  width: 940px;
+  margin: 60px 130px 53px 130px;
+  font-family: "Cuprum", "Arial", sans-serif;
  }
 
  .menu {
-   display: flex;
-   flex-direction: row;
+  display: flex;
+  flex-direction: row;
  }
 
  .menu-slider {
-   outline: 3px dashed gray;
-   display: block;
-   width: 620px;
-   height: 266px;
-   margin-top: 143px;
+  outline: 3px dashed gray;
+  display: block;
+  width: 620px;
+  height: 266px;
+  margin-top: 143px;
  }
 
 .menu ul {
@@ -243,22 +244,22 @@ header {
 }
 
  .menu li {
-   outline: 3px dashed gray;
-   display: block;
-   position: relative;
-   height: 123px;
-   width: 300px; 
+  outline: 3px dashed gray;
+  display: block;
+  position: relative;
+  height: 123px;
+  width: 300px; 
  }
 
  .menu li:nth-of-type(4) {
-   position: absolute;
-   left: 640px;
-   top: 143px;
+  position: absolute;
+  left: 640px;
+  top: 143px;
  }
 
  .menu li:nth-of-type(2) {
-   margin-left: 20px;
-   margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 
 }
 
@@ -272,6 +273,72 @@ header {
   position: absolute;
   left: 640px;
   top: 286px;
+}
+
+.popular-goods {
+  display: flex;
+  flex-direction: column;
+  margin-top: 53px;
+}
+
+.popular-goods-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+  min-height: 90px;
+  padding: 0 30px;
+  background-color: #f9f5f0;
+}
+
+.popular-goods-head > h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.popular-goods-all {
+  display: block;
+  width: 253px;
+  height: 38px;
+  background-color: #ee3643;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 1px;
+}
+
+.popular-goods > ol {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.popular-goods li {
+  width: 220px;
+  min-height: 318px;
+  background-color: white;
+  border: 1px solid #eaeaea;
+}
+
+.card {
+  width: 100%;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+}
+
+.card img {
+  width: 218px;
+  height: 170px;
+}
+
+.card > h3 {
+  padding: 12px 30px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;  
 }
 
 
