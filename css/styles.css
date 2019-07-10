@@ -67,7 +67,7 @@ fonts:
   margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -531,6 +531,8 @@ main > .width-container:nth-child(1) {
   display: flex;
   flex-direction: row;
   margin-top: 59px;
+  position: relative;
+  width: 940px;
 }
 
 .menu-slider {
@@ -787,7 +789,7 @@ label[for="menu-btn2"] {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: 220px;
   height: 100%;
   font-family: "PT Sans", "Arial", sans-serif; 
 }
@@ -803,6 +805,7 @@ label[for="menu-btn2"] {
 }
 
 .card > h3 {
+  width: 218px;
   padding: 8px 30px 2px 30px;
   font-size: 18px;
   line-height: 20px;
@@ -856,6 +859,7 @@ label[for="menu-btn2"] {
 .actions {
   display: none;
   position: absolute;
+  left: 0px;
   width: 218px;
   height: 170px;
   background-color: white;
@@ -2015,7 +2019,7 @@ footer .footer-bottom {
 }
 
 .write-us input[type="text"],
-.write-us input[type="e-mail"],
+.write-us input[type="email"],
 .write-us textarea {
   display: block;
   margin-top: 13px;
@@ -2028,7 +2032,7 @@ footer .footer-bottom {
 }
 
 .write-us input[type="text"],
-.write-us input[type="e-mail"] {
+.write-us input[type="email"] {
   width: 220px;
   height: 38px;
   padding: 13px 17px 15px;
@@ -2118,7 +2122,7 @@ footer .footer-bottom {
   height: 20px;
   left: 20px;
   top: 2px;
-  background: #transparent;
+  background: transparent;
   border: 7px solid #ffffff;
   border-top: none;
   border-right: none;
@@ -2140,8 +2144,6 @@ footer .footer-bottom {
   color: #000000;
   background: #ffffff;
   border-radius: 2px;
-
-
 }
 
 .cart-add-close {

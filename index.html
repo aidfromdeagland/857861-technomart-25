@@ -64,25 +64,7 @@
     <main>
       <div class="width-container">
       <section class="menu">
-        <div class="menu-slider">
-          <a class="menu-catalog  red-btn" href="catalog.html">Открыть каталог</a>
-          <input class="visually-hidden" type="radio" name="menu-toggle" id="menu-btn1" checked>
-          <input class="visually-hidden" type="radio" name="menu-toggle" id="menu-btn2">
-          <div class="menu-sliderrr">
-            <div class="menu-slide1">
-              <h3>Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>
-            </div>
-            <div class="menu-slide2">
-              <h3>Дрели</h3>
-              <p>Соседям на радость!</p>
-            </div>
-          </div>	
-          <div class="menu-slider-controls">
-            <label for="menu-btn1"></label>
-            <label for="menu-btn2"></label>
-          </div>
-        </div>
+        
         <ul>
           <li>
             <div class="flag flag-new" title="Новинка"></div>
@@ -110,6 +92,25 @@
             <a class="menu-delivery" href="#">Бесплатно</a>
           </li>
         </ul>
+        <div class="menu-slider">
+          <a class="menu-catalog  red-btn" href="catalog.html">Открыть каталог</a>
+          <input class="visually-hidden" type="radio" name="menu-toggle" id="menu-btn1" checked>
+          <input class="visually-hidden" type="radio" name="menu-toggle" id="menu-btn2">
+          <div class="menu-sliderrr">
+            <div class="menu-slide1">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+            </div>
+            <div class="menu-slide2">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+            </div>
+          </div>	
+          <div class="menu-slider-controls">
+            <label for="menu-btn1"></label>
+            <label for="menu-btn2"></label>
+          </div>
+        </div>
       </section>
       <section class="popular-goods">
         <div class="popular-goods-head">
@@ -304,7 +305,7 @@
           <input type="text" placeholder="Имя Фамилия">
         </label>
         <label> Ваш e-mail:
-          <input type="e-mail" placeholder="email@example.com">
+          <input type="email" placeholder="email@example.com">
         </label>
         <label> Текст письма:
           <textarea placeholder="В свободной форме"> 
@@ -317,7 +318,7 @@
     </div>
 
     <div class="modal map">
-      <iframe width="940" height="450" src="https://maps.google.com/maps?width=940&amp;height=450&amp;hl=ru&amp;coord=59.9387951,30.3223353&amp;q=%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%2019%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+(%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BC%D0%B0%D1%80%D1%82)&amp;ie=UTF8&amp;t=&amp;z=9&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Draw map route</a>
+      <iframe width="940" height="450" src="https://maps.google.com/maps?width=940&amp;height=450&amp;hl=ru&amp;coord=59.9387951,30.3223353&amp;q=%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%2019%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+(%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BC%D0%B0%D1%80%D1%82)&amp;ie=UTF8&amp;t=&amp;z=9&amp;iwloc=B&amp;output=embed">
       </iframe>
       <button class="map-close btn-close" type="button" title="Закрыть" aria-label="Закрыть карту"></button>
     </div>
@@ -329,6 +330,7 @@
       <button class="cart-add-close btn-close" type="button" title="Закрыть" aria-label="Закрыть">
         </button>
     </div>
-    <script src="js/min-js.js" async></script>
+    <script src="js/common.js" async></script>
+    <script src="js/index-modals.js" async></script>
   </body>
 </html>
