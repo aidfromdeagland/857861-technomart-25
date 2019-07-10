@@ -2043,7 +2043,7 @@ footer .footer-bottom {
   border-radius: 5px / 2px;
 }
 
-.wtite-us-close {
+.write-us-close {
   position: absolute;
   width: 21px;
   height: 21px;
@@ -2053,7 +2053,7 @@ footer .footer-bottom {
   border: none;
 }
 
-.wtite-us-close:hover,
+.write-us-close:hover,
 .map-close:hover,
 .cart-add-close:hover {
   cursor: pointer;
